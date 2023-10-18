@@ -3,114 +3,8 @@
     {
         static void Main(string[] args)
         {
-            Zadanie6();
+            Zadanie3();
         }
-        public static void BoolTytpe()
-        {
-            bool isWarm = false;
-            bool isGreater = true;
-        }
-        public static void LogicOperators()
-        {
-            bool isWarm = false;
-            //negacja
-            bool isCold = !isWarm;
-            //iloczyn AND
-            bool isShinning = true;
-            bool canWalk = !isCold && !isShinning;
-            // alternatywa OR
-            bool haveMoney = false;
-            bool isCreditCardActive = true;
-            bool canPay = haveMoney || isCreditCardActive;
-        }
-
-        public static void IfStatement()
-        {
-            bool haveMoney = true;
-            if (haveMoney)
-            {
-                Console.WriteLine("Płace");
-            }
-            Console.WriteLine("Instrukcja za if");
-        }
-
-        public static void IfElseStatement()
-        {
-            bool haveMoney = true;
-            if (haveMoney)
-            {
-                Console.WriteLine("Płace");
-            }
-            else
-            {
-                Console.WriteLine("Nie mogę zapłacić");
-            }
-        }
-
-        public static void CompareOperators()
-        {
-            double temperature = 13;
-            double luminance = 120;
-            bool isWarm = temperature >= 15;
-            bool isSinning = luminance > 400;
-            bool isDark = luminance <= 100;
-            if (isWarm && isSinning)
-            {
-                Console.WriteLine("Ide na spacer");
-            }
-            else
-            {
-                Console.WriteLine("Zostaje w domu");
-            }
-        }
-
-        public static void EqualityOperator(){
-            double a = 1;
-            bool isZero = a == 0;
-
-            bool isWarm = false;
-            bool isWarmTrue = isWarm == true;
-        }
-
-        public static void SwitchStatement()
-        {
-            int number = 4;
-            switch (number){
-                default:
-                    Console.WriteLine($"Nie znam takiej liczby {number}");
-                    break;
-                case 1:
-                    Console.WriteLine("I");
-                    break;
-                case 2:
-                    Console.WriteLine("II");
-                    break;
-                case 3: Console.WriteLine("III");
-                    break;
-                case 4:
-                    Console.WriteLine("IV");
-                    break;
-                case 5:
-                    Console.WriteLine("V");
-                    break;
-                case 6:
-                    Console.WriteLine("VI");
-                    break;
-                case 7:
-                    Console.WriteLine("VI");
-                    break;
-                case 8:
-                    Console.WriteLine("VIII");
-                    break;
-                case 9:
-                    Console.WriteLine("IX");
-                    break;
-                case 10:
-                    Console.WriteLine("X");
-                    break;
-            }
-        }
-
         public static void Zadanie1()
         {
             decimal balans = 56;
@@ -126,7 +20,6 @@
             }
             Console.WriteLine(canPay);
         }
-
         public static void Zadanie2(){
               double a = 5;
               double b = 1;
@@ -139,7 +32,7 @@
               }
               Console.WriteLine(isTriangle);
           }
-        /*public static void Zadanie3()
+        public static void Zadanie3()
         {
             double cx = 2.56;
             double cy = 4.6;
@@ -147,14 +40,10 @@
             double x = 6.4;
             double y = 2.234;
             bool isOutside;
-            if (){
-                isOutside = true;
-            }
-            else{
-                isOutside = false;
-            }
+            double distance = Math.Sqrt(Math.Pow(x - cx, 2) + Math.Pow(y - cy, 2));
+            isOutside = distance > cradius;
             Console.WriteLine($"Is Outside = {isOutside}");
-        }*/
+        }
         public static void Zadanie4(){
             double a = 2;
             double b = 4;

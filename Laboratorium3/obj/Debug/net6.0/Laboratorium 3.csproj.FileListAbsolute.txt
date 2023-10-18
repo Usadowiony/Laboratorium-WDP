@@ -12,3 +12,17 @@ D:\WebDev\Laboratorium-WDP\Laboratorium-3\obj\Debug\net6.0\refint\Laboratorium 3
 D:\WebDev\Laboratorium-WDP\Laboratorium-3\obj\Debug\net6.0\Laboratorium 3.pdb
 D:\WebDev\Laboratorium-WDP\Laboratorium-3\obj\Debug\net6.0\Laboratorium 3.genruntimeconfig.cache
 D:\WebDev\Laboratorium-WDP\Laboratorium-3\obj\Debug\net6.0\ref\Laboratorium 3.dll
+D:\WebDev\Laboratorium-WDP\Laboratorium3\bin\Debug\net6.0\Laboratorium 3.exe
+D:\WebDev\Laboratorium-WDP\Laboratorium3\bin\Debug\net6.0\Laboratorium 3.deps.json
+D:\WebDev\Laboratorium-WDP\Laboratorium3\bin\Debug\net6.0\Laboratorium 3.runtimeconfig.json
+D:\WebDev\Laboratorium-WDP\Laboratorium3\bin\Debug\net6.0\Laboratorium 3.dll
+D:\WebDev\Laboratorium-WDP\Laboratorium3\bin\Debug\net6.0\Laboratorium 3.pdb
+D:\WebDev\Laboratorium-WDP\Laboratorium3\obj\Debug\net6.0\Laboratorium 3.GeneratedMSBuildEditorConfig.editorconfig
+D:\WebDev\Laboratorium-WDP\Laboratorium3\obj\Debug\net6.0\Laboratorium 3.AssemblyInfoInputs.cache
+D:\WebDev\Laboratorium-WDP\Laboratorium3\obj\Debug\net6.0\Laboratorium 3.AssemblyInfo.cs
+D:\WebDev\Laboratorium-WDP\Laboratorium3\obj\Debug\net6.0\Laboratorium 3.csproj.CoreCompileInputs.cache
+D:\WebDev\Laboratorium-WDP\Laboratorium3\obj\Debug\net6.0\Laboratorium 3.dll
+D:\WebDev\Laboratorium-WDP\Laboratorium3\obj\Debug\net6.0\refint\Laboratorium 3.dll
+D:\WebDev\Laboratorium-WDP\Laboratorium3\obj\Debug\net6.0\Laboratorium 3.pdb
+D:\WebDev\Laboratorium-WDP\Laboratorium3\obj\Debug\net6.0\Laboratorium 3.genruntimeconfig.cache
+D:\WebDev\Laboratorium-WDP\Laboratorium3\obj\Debug\net6.0\ref\Laboratorium 3.dll
