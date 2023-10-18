@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\WebDev\\Laboratorium-WDP\\Laboratorium 3\\Laboratorium 3.csproj": {}
+    "D:\\WebDev\\Laboratorium-WDP\\Laboratorium-3\\Laboratorium 3.csproj": {}
   },
   "projects": {
-    "D:\\WebDev\\Laboratorium-WDP\\Laboratorium 3\\Laboratorium 3.csproj": {
+    "D:\\WebDev\\Laboratorium-WDP\\Laboratorium-3\\Laboratorium 3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\WebDev\\Laboratorium-WDP\\Laboratorium 3\\Laboratorium 3.csproj",
+        "projectUniqueName": "D:\\WebDev\\Laboratorium-WDP\\Laboratorium-3\\Laboratorium 3.csproj",
         "projectName": "Laboratorium 3",
-        "projectPath": "D:\\WebDev\\Laboratorium-WDP\\Laboratorium 3\\Laboratorium 3.csproj",
+        "projectPath": "D:\\WebDev\\Laboratorium-WDP\\Laboratorium-3\\Laboratorium 3.csproj",
         "packagesPath": "C:\\Users\\wojto\\.nuget\\packages\\",
-        "outputPath": "D:\\WebDev\\Laboratorium-WDP\\Laboratorium 3\\obj\\",
+        "outputPath": "D:\\WebDev\\Laboratorium-WDP\\Laboratorium-3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\wojto\\AppData\\Roaming\\NuGet\\NuGet.Config",
