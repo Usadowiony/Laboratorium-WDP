@@ -3,7 +3,7 @@
     {
         static void Main(string[] args)
         {
-            Zadanie4();
+            Zadanie5();
         }
         public static void Zadanie1()
         {
@@ -61,9 +61,9 @@
             Console.WriteLine(isOnBorder);    
         }
         public static void Zadanie5(){
-            double a = 2;
-            double b = 4;
-            double c = 2;
+            double a = 2.5;
+            double b = -0.5;
+            double c = 1.5;
 
             double x1;
             double x2;
