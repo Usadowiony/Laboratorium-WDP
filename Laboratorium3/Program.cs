@@ -3,7 +3,7 @@
     {
         static void Main(string[] args)
         {
-            Zadanie3();
+            Zadanie4();
         }
         public static void Zadanie1()
         {
@@ -45,6 +45,22 @@
             Console.WriteLine($"Is Outside = {isOutside}");
         }
         public static void Zadanie4(){
+            int rx = 56;
+            int ry = 34;
+            int width = 23;
+            int height = 12;
+            int x = 23;
+            int y = 11;
+            bool isOnBorder;
+            if ((x == rx || x == rx + width) && (y == ry || y == ry - height)){
+                isOnBorder = true;
+            }else{
+                isOnBorder = false;
+            }
+    
+            Console.WriteLine(isOnBorder);    
+        }
+        public static void Zadanie5(){
             double a = 2;
             double b = 4;
             double c = 2;
@@ -68,7 +84,7 @@
                 Console.WriteLine("Brak pierwiastków rzeczywistych");
             }
         }
-        public static void Zadanie5(){
+        public static void Zadanie6(){
             int coin = 0;
             switch (coin){
                 default:
@@ -82,7 +98,7 @@
                     break;
             }
         }
-        public static void Zadanie6(){
+        public static void Zadanie7(){
             char letter = 'A';
             switch (letter){
                 default: Console.WriteLine("spółgłoska");
