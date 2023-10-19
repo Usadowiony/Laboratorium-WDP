@@ -3,7 +3,7 @@
     {
         static void Main(string[] args)
         {
-            Zadanie5();
+            Zadanie6();
         }
         public static void Zadanie1()
         {
@@ -84,7 +84,30 @@
                 Console.WriteLine("Brak pierwiastków rzeczywistych");
             }
         }
-        public static void Zadanie6(){
+         public static void Zadanie6(){
+            int code = 4;
+            int quantity = 11;
+            decimal price = 3.5m;
+            decimal sellPrice;
+
+            if (code < 10){
+                sellPrice = price;
+            }else if(code >= 10 && code <=15){
+                sellPrice = price - (price * 0.05m);
+            }else{
+                if (quantity <= 10){
+                    sellPrice = price + (price * 0.05m);
+                }else if(quantity <= 20){
+                    sellPrice = price;
+                }else if(quantity < 100){
+                    sellPrice = price - (price * ((quantity / 10) * 0.01m));
+                }else{
+                    sellPrice = price - (price * 0.05m);
+                }
+            }
+            Console.WriteLine($"Price: {sellPrice}");
+        }
+        public static void Zadanie7(){
             int coin = 0;
             switch (coin){
                 default:
@@ -98,7 +121,7 @@
                     break;
             }
         }
-        public static void Zadanie7(){
+        public static void Zadanie8(){
             char letter = 'A';
             switch (letter){
                 default: Console.WriteLine("spółgłoska");
