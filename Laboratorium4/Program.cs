@@ -25,11 +25,44 @@ Console.WriteLine(factors);*/
     }
 }
 Zadanie1();*/
-static void ForStatement(){
+/*static void ForStatement(){
     double[] factors = { 3, 5, 4, 6.7 };
-    for(int i = 0; i < factors.Length; i++){
+    for (int i = 0; i < factors.Length; i++)
+    {
         factors[i] = 2;
         Console.Write($"{factors[i]} ");
     }
+    for (int i = factors.Length - 1; i >= 0; i--)
+    {
+        Console.Write($"{factors[i]} ");
+    }
+    for (int i = 11; i < 30; i += 2){
+        Console.Write($"{i} ");
+    }
 }
-ForStatement();
+ForStatement();*/
+static void WhileStatement(){
+    char znak = 'a';
+    Console.WriteLine("q - wyjście");
+    Console.WriteLine("a - wyświewtl komunikat");
+    Console.WriteLine("b - oblicz kwadrat");
+    while ((znak = Console.ReadKey().KeyChar) != 'q')
+    {
+        switch (znak)
+        {
+            case 'a':
+                Console.WriteLine("Komunikat: Hello");
+                break;
+            case 'b':
+                double x = double.Parse(Console.ReadLine());
+                Console.WriteLine($"{x} * {x} = {x*x}");
+                break;
+            default:
+                Console.WriteLine("Nieznana opcja");
+                break;
+        }
+        Console.WriteLine("q - wyjście");
+        Console.WriteLine("a - wyświewtl komunikat");
+    }
+}
+WhileStatement();
