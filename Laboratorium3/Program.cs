@@ -3,7 +3,7 @@
     {
         static void Main(string[] args)
         {
-            Zadanie6();
+            Zadanie8();
         }
         public static void Zadanie1()
         {
@@ -108,37 +108,110 @@
             Console.WriteLine($"Price: {sellPrice}");
         }
         public static void Zadanie7(){
-            int coin = 0;
-            switch (coin){
-                default:
-                    Console.WriteLine($"Brak takiego nominału {coin}");
-                    break;
-                case 1: Console.WriteLine("1zł");
-                    break;
-                case 2: Console.WriteLine("2zł");
-                    break;
-                case 5: Console.WriteLine("5zł");
-                    break;
-            }
+        int decimalNumber = 11;
+        switch(decimalNumber){
+            case 0:
+                Console.WriteLine("Rzymianie nie znali zera!");
+                break;
+            case 1:
+                Console.WriteLine("I");
+                break;
+            case 2:
+                Console.WriteLine("II");
+                break;
+            case 3:
+                Console.WriteLine("III");
+                break;
+            case 4:
+                Console.WriteLine("IV");
+                break;
+            case 5:
+                Console.WriteLine("V");
+                break;
+            case 6:
+                Console.WriteLine("VI");
+                break;
+            case 7:
+                Console.WriteLine("VII");
+                break;
+            case 8:
+                Console.WriteLine("VIII");
+                break;
+            case 9:
+                Console.WriteLine("IX");
+                break;
+            case 10:
+                Console.WriteLine("X");
+                break;
+            case 11:
+                Console.WriteLine("XI");
+                break;
+            case 12:
+                Console.WriteLine("XII");
+                break;
+            case 13:
+                Console.WriteLine("XIII");
+                break;
+            case 14:
+                Console.WriteLine("XIV");
+                break;
+            case 15:
+                Console.WriteLine("XV");
+                break;
+            case 16:
+                Console.WriteLine("XVI");
+                break;
+            case 17:
+                Console.WriteLine("XVII");
+                break;
+            case 18:
+                Console.WriteLine("XVIII");
+                break;
+            case 19:
+                Console.WriteLine("XIX");
+                break;
+            case 20:
+                Console.WriteLine("XX");
+                break;
+        } 
+        if (decimalNumber < 0 || decimalNumber > 20){
+            Console.WriteLine("Nie obsługuje liczb spoza zakresu od 1 do 20!");
+        }
         }
         public static void Zadanie8(){
-            char letter = 'A';
-            switch (letter){
-                default: Console.WriteLine("spółgłoska");
+            char hex = '9';
+            if(hex >= '0' && hex <= '9'){
+                Console.WriteLine(hex);
+            }else{
+                switch(hex){
+                    case 'A':
+                    case 'a':
+                        Console.WriteLine("10");
                         break;
-
-                case 'a':
-                case 'A':
-                case 'e':
-                case 'E':
-                case 'i':
-                case 'I':
-                case 'u':
-                case 'U':
-                case 'y':
-                case 'Y':
-                    Console.WriteLine("samogłoska");
-                    break;
+                    case 'B':
+                    case 'b':
+                        Console.WriteLine("11");
+                        break;
+                    case 'C':
+                    case 'c':
+                        Console.WriteLine("12");
+                        break;
+                    case 'D':
+                    case 'd':
+                        Console.WriteLine("13");
+                        break;
+                    case 'E':
+                    case 'e':
+                        Console.WriteLine("14");
+                        break;
+                    case 'F':
+                    case 'f':
+                        Console.WriteLine("15");
+                        break;
+                    default:
+                        Console.WriteLine("To nie jest cyfra szesnatkowa!");
+                        break;
+                }
             }
         }
     }
