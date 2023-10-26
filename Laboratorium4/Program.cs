@@ -31,7 +31,15 @@
             Console.WriteLine($"Nie wpisałeś liczby całkowitej, zatem wynik dodawania wynosi: {x}");
         }
         static void Zadanie4(){
-            
+            double[,] arr = { { 1.1, 3.5, 2.56 }, { 1.4, 34, 7, }, { 1.5, 56, 2.6 } };
+            double b = 4.1;
+            for(int i = 0; i < arr.GetLength(0); i++){
+                for(int k = 0; k < arr.GetLength(1); k++){
+                    if(arr[i,k] > b){
+                    Console.WriteLine(arr[i,k]);
+                }
+                }
+            }
         }
     }
 }
