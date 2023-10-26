@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Zadanie4();
+            Zadanie5();
         }
         static void Zadanie1(){
             double[] factors = { 2.4, 1.9, -0.5};
@@ -40,6 +40,26 @@
                 }
                 }
             }
+        }
+        static void Zadanie5(){
+            int n;
+            Console.Write("Wprowadź liczbę całkowitą n: ");
+            while (!int.TryParse(Console.ReadLine(), out n) || n <= 0){
+                Console.Write("Błąd! Jeszcze raz: ");
+            }
+            for(int i = 0; i < n - 1; i++){
+                Console.Write("|");
+                for(int k = 0; k < i; k++){
+                    Console.Write(" ");
+                }
+                Console.Write("\\");
+                Console.WriteLine();
+            }
+            Console.Write("|");
+            for(int i = 0; i < n - 1; i++){
+                Console.Write("_");
+            }
+            Console.Write("\\");
         }
     }
 }
