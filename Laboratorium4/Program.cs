@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Zadanie5();
+            Zadanie6();
         }
         static void Zadanie1(){
             double[] factors = { 2.4, 1.9, -0.5};
@@ -60,6 +60,15 @@
                 Console.Write("_");
             }
             Console.Write("\\");
+        }
+        static void Zadanie6(){
+            int n;
+            Console.WriteLine("Podaj liczbę całkowitą n: ");
+            while(!int.TryParse(Console.ReadLine(), out n) || n <= 0){
+                Console.WriteLine("Błąd! Podaj poprawną liczbe: ");
+            }
+            Console.WriteLine($"Podaj ciąg {n} liczb typu double: ");
+            double val = double.Parse(Console.ReadLine());
         }
     }
 }
