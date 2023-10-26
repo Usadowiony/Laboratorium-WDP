@@ -13,6 +13,17 @@ static void Zadanie2(){
         Console.WriteLine(arr[i]);
     }
 }
+static void Zadanie3(){
+    double x = 0;
+    Console.WriteLine("Podaj dowolną liczbę całkowitą: ");
+    while(int.TryParse(Console.ReadLine(), out int value)){
+        Console.WriteLine("Następna liczba całkowita: ");
+        x += value;
+    }
+    Console.WriteLine($"Nie wpisałeś liczby całkowitej, zatem wynik dodawania wynosi: {x}");
+}
 Zadanie1();
 Console.WriteLine("========");
 Zadanie2();
+Console.WriteLine("========");
+Zadanie3();
