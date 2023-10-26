@@ -67,8 +67,15 @@
             while(!int.TryParse(Console.ReadLine(), out n) || n <= 0){
                 Console.WriteLine("Błąd! Podaj poprawną liczbe: ");
             }
-            Console.WriteLine($"Podaj ciąg {n} liczb typu double: ");
-            double val = double.Parse(Console.ReadLine());
+            double[] values = new double[n];
+            for(int i = 0; i < n; i++){
+                Console.Write($"Podaj {i+1}/{n} liczbe typu double: ");
+                values[i] = double.Parse(Console.ReadLine());
+                Console.WriteLine();
+            }
+            for(int k = n - 1; k >= 0; k -= 2){
+                Console.Write($"{values[k]} ");
+            }
         }
     }
 }
