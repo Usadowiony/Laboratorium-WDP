@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Zadanie6();
+            Zadanie7();
         }
         static void Zadanie1(){
             double[] factors = { 2.4, 1.9, -0.5};
@@ -76,6 +76,23 @@
             for(int k = n - 1; k >= 0; k -= 2){
                 Console.Write($"{values[k]} ");
             }
+        }
+        static void Zadanie7(){
+            int n;
+            int m;
+            Console.Write("Podaj liczbę całkowitą n: ");
+            while(!int.TryParse(Console.ReadLine(), out n) || n <= 0){
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("Błąd! Podaj poprawną liczbe: ");
+                Console.ResetColor();
+            }
+            Console.Write("Podaj liczbę całkowitą m: ");
+            while(!int.TryParse(Console.ReadLine(), out m) || m <= 0){
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("Błąd! Podaj poprawną liczbe: ");
+                Console.ResetColor();
+            }
+            char[,] rectangle = new char[n,m];
         }
     }
 }
