@@ -78,8 +78,8 @@
             }
         }
         static void Zadanie7(){
-            int n;
-            int m;
+            int n; //wiersze
+            int m; //kolumny
             Console.Write("Podaj liczbę całkowitą n: ");
             while(!int.TryParse(Console.ReadLine(), out n) || n <= 0){
                 Console.ForegroundColor = ConsoleColor.Red;
@@ -93,6 +93,21 @@
                 Console.ResetColor();
             }
             char[,] rectangle = new char[n,m];
+            for(int i = 0; i < n; i++){
+                for(int j = 0; j < m; j++){
+                    if(i == 0 || i == n - 1 || j == 0 || j == m - 1){
+                        rectangle[i,j] = '#';
+                    }else{
+                        rectangle[i,j] = ' ';
+                    }
+                }
+            }
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < m; j++) {
+                    Console.Write(rectangle[i, j]);
+                }
+                Console.WriteLine();
+            }
         }
     }
 }
