@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Zadanie8();
+            Zadanie9();
         }
         static void Zadanie1(){
             double[] factors = { 2.4, 1.9, -0.5};
@@ -123,6 +123,15 @@
                 }
             }
             Console.WriteLine($"Ciąg cyfr {n} ma długość {n.ToString().Length}");
+        }
+        static void Zadanie9(){
+            int n; //wiersze
+            Console.Write("Podaj liczbę całkowitą większą od 0: ");
+            while(!int.TryParse(Console.ReadLine(), out n) || n <= 0){
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("Błąd! Podaj poprawną liczbe: ");
+                Console.ResetColor();
+            }
         }
     }
 }
