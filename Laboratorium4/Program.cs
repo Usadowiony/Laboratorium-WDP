@@ -112,12 +112,17 @@
         static void Zadanie8(){
             long n;
             Console.Write("Podaj ciąg liczb całkowitych: ");
-            while(!long.TryParse(Console.ReadLine(), out n) || n <= 0){
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.Write("Błąd! Podaj poprawne liczby: ");
-                Console.ResetColor();
+            while (true){
+                if (long.TryParse(Console.ReadLine(), out n) && n >= 0){
+                    break;
+                }else{
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Błąd! To nie jest prawidłowa liczba całkowita nieujemna.");
+                    Console.ResetColor();
+                    Console.Write("Podaj ciąg liczb całkowitych: ");
+                }
             }
-            Console.WriteLine(n);
+            Console.WriteLine($"Ciąg cyfr {n} ma długość {n.ToString().Length}");
         }
     }
 }
