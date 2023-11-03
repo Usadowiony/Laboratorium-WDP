@@ -125,12 +125,21 @@
             Console.WriteLine($"Ciąg cyfr {n} ma długość {n.ToString().Length}");
         }
         static void Zadanie9(){
-            int n; //wiersze
+            int n;
             Console.Write("Podaj liczbę całkowitą większą od 0: ");
             while(!int.TryParse(Console.ReadLine(), out n) || n <= 0){
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.Write("Błąd! Podaj poprawną liczbe: ");
                 Console.ResetColor();
+            }
+            for(int i = n - 1; i >= 0; i--){
+                for (int j = 0; j < n - i; j++){
+                    Console.Write(' ');
+                }
+                for (int j = 0; j < 2 * i + 1; j++){
+                    Console.Write('#');
+                }
+                Console.WriteLine();
             }
         }
     }
