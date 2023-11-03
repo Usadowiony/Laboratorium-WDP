@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Zadanie7();
+            Zadanie8();
         }
         static void Zadanie1(){
             double[] factors = { 2.4, 1.9, -0.5};
@@ -108,6 +108,16 @@
                 }
                 Console.WriteLine();
             }
+        }
+        static void Zadanie8(){
+            long n;
+            Console.Write("Podaj ciąg liczb całkowitych: ");
+            while(!long.TryParse(Console.ReadLine(), out n) || n <= 0){
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("Błąd! Podaj poprawne liczby: ");
+                Console.ResetColor();
+            }
+            Console.WriteLine(n);
         }
     }
 }
