@@ -3,7 +3,6 @@
         static void Main(string[] arg)
         {
             double input;
-
             Console.WriteLine("Wpisz liczbę");
             while (!double.TryParse(Console.ReadLine(), out input))
             {
