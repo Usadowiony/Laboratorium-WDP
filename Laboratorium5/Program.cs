@@ -2,7 +2,7 @@
     internal class Program{
         static void Main(string[] arg)
         {
-            Console.WriteLine(CircleArea(2.2));
+           Console.WriteLine(QuadraticEquation());
         }
         //Zadnie 1
         public static void Print(double a){
@@ -15,6 +15,10 @@
             }
             double area = Math.PI * (r * r);
             return area;
+        }
+        //Zadanie 3
+        public static double QuadraticEquation(double x = 1.0, double a = 1.0, double b = 1.0, double c = 1.0){
+            return a*(x*x) + b*x + c;
         }
     }
 }
