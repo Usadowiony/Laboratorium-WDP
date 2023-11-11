@@ -8,26 +8,24 @@
     "net6.0": []
   },
   "packageFolders": {
-    "D:\\Users\\wojciech.pietrzak\\.nuget\\packages\\": {}
+    "C:\\Users\\Wojciu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\wojciech.pietrzak\\Source\\Repos\\Laboratorium-WDP\\Laboratorium5\\Laboratorium5.csproj",
+      "projectUniqueName": "C:\\Users\\Wojciu\\Desktop\\WEBDEV\\WSEI\\Laboratorium-WDP\\Laboratorium5\\Laboratorium5.csproj",
       "projectName": "Laboratorium5",
-      "projectPath": "D:\\Users\\wojciech.pietrzak\\Source\\Repos\\Laboratorium-WDP\\Laboratorium5\\Laboratorium5.csproj",
-      "packagesPath": "D:\\Users\\wojciech.pietrzak\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\wojciech.pietrzak\\Source\\Repos\\Laboratorium-WDP\\Laboratorium5\\obj\\",
+      "projectPath": "C:\\Users\\Wojciu\\Desktop\\WEBDEV\\WSEI\\Laboratorium-WDP\\Laboratorium5\\Laboratorium5.csproj",
+      "packagesPath": "C:\\Users\\Wojciu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Wojciu\\Desktop\\WEBDEV\\WSEI\\Laboratorium-WDP\\Laboratorium5\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "D:\\Users\\wojciech.pietrzak\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Wojciu\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -56,12 +54,30 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.23, 6.0.23]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.23, 6.0.23]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.23, 6.0.23]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.23, 6.0.23]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

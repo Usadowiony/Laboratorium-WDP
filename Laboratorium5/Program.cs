@@ -2,13 +2,7 @@
     internal class Program{
         static void Main(string[] arg)
         {
-            double input;
-            Console.WriteLine("Wpisz liczbę");
-            while (!double.TryParse(Console.ReadLine(), out input))
-            {
-                Console.WriteLine("Spróbuj wpisać jeszcze raz liczbę np. 12,56");
-            }
-            Console.WriteLine(input * input);
+            Print(3.1);
         }
         static double Add(double x, double y){
             return x + y;
@@ -73,6 +67,10 @@
             {
                 Console.WriteLine("Nie znaleziono wartości");
             }
+        }
+        //Zadnie 1
+        public static void Print(double a){
+            Console.WriteLine($"Wartość argumentu jest równa = {a}");
         }
     }
 }
