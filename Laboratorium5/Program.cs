@@ -45,8 +45,8 @@
                         Console.Write("Niepoprawny format! Wpisz jeszcze raz: ");
                         Console.ResetColor();
                     }
-                    Console.WriteLine($"Wartość dla {letter}: {values[i]}");
-            }
+                }
+                Console.WriteLine($"Wynik funkcji kwadratowej wynosi: {values[1]*(values[0]*values[0]) + values[2]*values[0] + values[3]}");
         }
     }
 }
