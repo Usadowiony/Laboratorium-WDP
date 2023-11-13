@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SrUoSwKqJi0NgrkDR7whB3uOfLOx6HAy3sxnuVnK0zGn5vU9vWTRYOHih1Wr4Obz8V8p5Ub1I0fzDMj7Eg/dFA==",
+  "dgSpecHash": "+TVgNNyhRH1rPC4kvy4vC57HQtNkhTJDyTVxdlLERE3D6z6yhXkChh1WpKq5sCkJMAeX8Udy1GSi5s1cK1iStg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Wojciu\\Desktop\\WEBDEV\\WSEI\\Laboratorium-WDP\\Laboratorium5\\Laboratorium5.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Wojciu\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.23\\microsoft.netcore.app.ref.6.0.23.nupkg.sha512",
-    "C:\\Users\\Wojciu\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.23\\microsoft.windowsdesktop.app.ref.6.0.23.nupkg.sha512",
-    "C:\\Users\\Wojciu\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.23\\microsoft.aspnetcore.app.ref.6.0.23.nupkg.sha512",
-    "C:\\Users\\Wojciu\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.23\\microsoft.netcore.app.host.win-x64.6.0.23.nupkg.sha512"
-  ],
+  "projectFilePath": "D:\\WebDev\\WSEI\\Laboratorium-WDP\\Laboratorium5\\Laboratorium5.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
