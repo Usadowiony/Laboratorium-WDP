@@ -25,7 +25,6 @@
             double[] values = new double[4];
             for(int i = 0; i < 4; i++){
                 string letter = "";
-                double value = 0.0;
                     switch (i){
                         case 0:
                             letter = "x";
@@ -41,12 +40,11 @@
                             break;
                         }
                     Console.Write($"Podaj w formacie double liczbe {letter}: ");
-                    while(double.TryParse(Console.ReadLine(), out value)){
+                    while(!double.TryParse(Console.ReadLine(), out values[i])){
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.Write("Niepoprawny format! Wpisz jeszcze raz: ");
                         Console.ResetColor();
                     }
-                    values[i] = value;
                     Console.WriteLine($"Wartość dla {letter}: {values[i]}");
             }
         }
