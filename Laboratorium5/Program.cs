@@ -2,7 +2,7 @@
     internal class Program{
         static void Main(string[] arg)
         {
-           Console.WriteLine(QuadraticEquation());
+           Zadanie4();
         }
         //Zadnie 1
         public static void Print(double a){
@@ -19,6 +19,14 @@
         //Zadanie 3
         public static double QuadraticEquation(double x = 1.0, double a = 1.0, double b = 1.0, double c = 1.0){
             return a*(x*x) + b*x + c;
+        }
+        ///Zadanie 4
+        public static void Zadanie4(){
+            double x;
+            Console.Write("Podaj w formacie double liczbe x: ");
+            while(!double.TryParse(Console.ReadLine(), out x)){
+                Console.Write("Niepoprawny format! Wpisz jeszcze raz: ");
+            }
         }
     }
 }
