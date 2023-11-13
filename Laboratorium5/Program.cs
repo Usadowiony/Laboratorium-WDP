@@ -24,7 +24,7 @@
         public static void Zadanie4(){
             double x;
             Console.Write("Podaj w formacie double liczbe x: ");
-            while(!double.TryParse(Console.ReadLine(), out x)){
+            while(double.TryParse(Console.ReadLine(), out x)){
                 Console.Write("Niepoprawny format! Wpisz jeszcze raz: ");
             }
         }
