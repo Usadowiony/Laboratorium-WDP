@@ -21,21 +21,29 @@
         public int Power;
         public int Volume;
         private double _mileage;
-
+        private double _fuelLevel;
+        public readonly double FuelTankCapacity;
+        public readonly double FuelConsumption;
+        public void Refuel(){
+            _fuelLevel = FuelTankCapacity;
+        }
         public double GetMileage(){
             return _mileage;
         }
-        public Car(int power, int volume){
+        public Car(int power, int volume, double fuelTankCapasity){
             Power = power;
             Volume = volume;
             _mileage = 0;
+            FuelTankCapacity = fuelTankCapasity;
         }
         public Car(){
             Power = 50;
             Volume = 500;
         }
         public void Drive(int distance){
+            double fuel = distance / 100 * FuelConsumption;
             _mileage += distance;
+
         }
     }
 }
