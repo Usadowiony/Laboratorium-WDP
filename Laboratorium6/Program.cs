@@ -15,13 +15,28 @@
             car3.Refuel();
             car3.Drive(120);
             car3.Drive(200);
-            Console.WriteLine($"Car Mileage: { car3.GetMileage}");
+            Console.WriteLine($"Car Mileage: {car3.GetMileage}");
             Console.WriteLine($"Car FuelLevel: {car3.GetFuelLevel}");
             Console.WriteLine($"Car CanDrive: {car3.Distance}");
+
+            Rectangle square = Rectangle.Squere(10);
+        }
+    }
+
+    class Rectangle{
+        public int Width{get; set;}
+        public int Height{get; set;}
+        public static Rectangle Squere(int size){
+            return new Rectangle()
+            {
+                Height = size,
+                Width = size,
+            };
         }
     }
 
     class Car {
+        public readonly static int MaxPower = 1000;
         private int _power;
         public int Power{
             get{
@@ -40,7 +55,7 @@
                 return _volume;
             }
             set{
-                if( _volume > 0){
+                if( _volume > 0 && _volume < MaxPower){
                     _volume = value;
                 }
             }
