@@ -11,6 +11,9 @@
             Console.WriteLine(car.Power);
             Console.WriteLine(car2.Power);
             Car car3 = new Car(200, 2000);
+            car.Drive(15);
+            car.Drive(25);
+            Console.WriteLine(car.GetMileage());
         }
     }
 
@@ -18,6 +21,10 @@
         public int Power;
         public int Volume;
         private double _mileage;
+
+        public double GetMileage(){
+            return _mileage;
+        }
         public Car(int power, int volume){
             Power = power;
             Volume = volume;
@@ -26,6 +33,9 @@
         public Car(){
             Power = 50;
             Volume = 500;
+        }
+        public void Drive(int distance){
+            _mileage += distance;
         }
     }
 }
