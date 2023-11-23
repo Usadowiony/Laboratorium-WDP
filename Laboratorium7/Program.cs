@@ -4,26 +4,37 @@
     {
         static void Main(string[] args)
         {
-            Car car3 = new Car{
-                Power = 200,
-                Volume = 2000,
-                FuelConsumption = 7.5,
-                FuelTankCapacity = 60,
-            };
-            car3.Drive(15);
-            car3.Drive(25);
-            car3.Refuel();
-            car3.Drive(120);
-            car3.Drive(200);
-            Console.WriteLine($"Car Mileage: {car3.GetMileage}");
-            Console.WriteLine($"Car FuelLevel: {car3.GetFuelLevel}");
-            Console.WriteLine($"Car CanDrive: {car3.Distance}");
-
-            Rectangle square = Rectangle.Squere(10);
+            Audio audio = new Audio();
+            Console.WriteLine(audio.Volume - Audio.MinVolume);
+            audio.VolumeUp();
+            audio.VolumeUp();
+            audio.VolumeUp();
+            Console.WriteLine(audio.Volume - Audio.MinVolume);
+            audio.VolumeDown();
+            Console.WriteLine(audio.Volume - Audio.MinVolume);
         }
     }
+public class Audio{
+    public int Volume { get; private set; }
+    public static readonly int MinVolume = 0;
+    public static readonly int MaxVolume = 100;
+    
+    public Audio(){
+        Volume = MinVolume;
+    }
 
-    class Rectangle{
+        public int VolumeUp(){
+            if(Volume < MaxVolume){
+                Volume++;
+            }
+        }
+        public int VolumeDown(){
+            if(Volume > MinVolume){
+                Volume--;
+            }
+        }
+}
+class Rectangle{
         public int Width{get; set;}
         public int Height{get; set;}
         public static Rectangle Squere(int size){

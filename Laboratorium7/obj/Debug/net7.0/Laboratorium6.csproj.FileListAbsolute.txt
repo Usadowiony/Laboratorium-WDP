@@ -13,3 +13,10 @@ D:\Users\wojciech.pietrzak\source\repos\Laboratorium-WDP2\Laboratorium6\obj\Debu
 D:\Users\wojciech.pietrzak\source\repos\Laboratorium-WDP2\Laboratorium6\obj\Debug\net7.0\Laboratorium6.pdb
 D:\Users\wojciech.pietrzak\source\repos\Laboratorium-WDP2\Laboratorium6\obj\Debug\net7.0\Laboratorium6.genruntimeconfig.cache
 D:\Users\wojciech.pietrzak\source\repos\Laboratorium-WDP2\Laboratorium6\obj\Debug\net7.0\ref\Laboratorium6.dll
+D:\WebDev\WSEI\Laboratorium-WDP\Laboratorium7\obj\Debug\net7.0\Laboratorium6.GeneratedMSBuildEditorConfig.editorconfig
+D:\WebDev\WSEI\Laboratorium-WDP\Laboratorium7\obj\Debug\net7.0\Laboratorium6.AssemblyInfoInputs.cache
+D:\WebDev\WSEI\Laboratorium-WDP\Laboratorium7\obj\Debug\net7.0\Laboratorium6.AssemblyInfo.cs
+D:\WebDev\WSEI\Laboratorium-WDP\Laboratorium7\obj\Debug\net7.0\Laboratorium6.csproj.CoreCompileInputs.cache
+D:\WebDev\WSEI\Laboratorium-WDP\Laboratorium7\obj\Debug\net7.0\Laboratorium6.dll
+D:\WebDev\WSEI\Laboratorium-WDP\Laboratorium7\obj\Debug\net7.0\refint\Laboratorium6.dll
+D:\WebDev\WSEI\Laboratorium-WDP\Laboratorium7\obj\Debug\net7.0\Laboratorium6.pdb
