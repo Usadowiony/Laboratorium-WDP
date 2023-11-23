@@ -17,16 +17,28 @@ public class Point{
     public int X;
     public int Y;
 
-    public void Move{
+    public void Move(val){
+        X += val;
+        Y += val;
+    }
+    public void Quadrant(){
+        if(X > 0 && Y > 0){
+            return 1;
+        }else if(X < 0 && Y > 0){
+            return 2;
+        }else if(X < 0 && Y < 0){
+            return 3;
+        }
+        else if(X > 0 && Y < 0){
+            return 4;
+        }else{
+            return 0;
+        }
+    }
+    public void MirrorX(){
 
     }
-    public void Quadrant{
-
-    }
-    public void MirrorX{
-
-    }
-    public void MirrorY{
+    public void MirrorY(){
         
     }
 }
