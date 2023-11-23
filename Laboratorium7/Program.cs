@@ -13,6 +13,23 @@
             */
         }
     }
+public class Point{
+    public int X;
+    public int Y;
+
+    public void Move{
+
+    }
+    public void Quadrant{
+
+    }
+    public void MirrorX{
+
+    }
+    public void MirrorY{
+        
+    }
+}
 public class Audio{
     public int Volume { get; private set; }
     public static readonly int MinVolume = 0;
