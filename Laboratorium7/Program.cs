@@ -14,14 +14,14 @@
         }
     }
 public class Point{
-    public int X;
-    public int Y;
+    public int X{get; set;}
+    public int Y{get; set;}
 
-    public void Move(val){
+    public void Move(int val){
         X += val;
         Y += val;
     }
-    public void Quadrant(){
+    public int Quadrant(){
         if(X > 0 && Y > 0){
             return 1;
         }else if(X < 0 && Y > 0){
@@ -35,11 +35,11 @@ public class Point{
             return 0;
         }
     }
-    public void MirrorX(){
-
+    public Point MirrorX(){
+        return new Point {X = -X, Y = Y};
     }
-    public void MirrorY(){
-        
+    public Point MirrorY(){
+        return new Point {X = X, Y = -Y};
     }
 }
 public class Audio{
