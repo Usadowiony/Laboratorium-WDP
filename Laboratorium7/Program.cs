@@ -4,14 +4,13 @@
     {
         static void Main(string[] args)
         {
-            Audio audio = new Audio();
-            Console.WriteLine(audio.Volume - Audio.MinVolume);
-            audio.VolumeUp();
-            audio.VolumeUp();
-            audio.VolumeUp();
-            Console.WriteLine(audio.Volume - Audio.MinVolume);
-            audio.VolumeDown();
-            Console.WriteLine(audio.Volume - Audio.MinVolume);
+            /*
+            Zdefiniuj klasę Point z właściwościami X, Y typu int oraz metodami instancyjnymi:
+            - Move, która przesuwa obie współrzędne punktu o argument
+            - Quadrant, która zwraca numer ćwiartki układu współrzędnych (od 1 do 4), w którym znajduje się punkt. Jeśli punkt jest na osi X lub Y metoda zwraca 0.
+            - MirrorY, która zwraca nowy punkt, który jest odbiciem lustrzany punktu względem osi Y
+            - MirrorX, która zwraca nowy punkt, który jest odbiciem lustrzany punktu względem osi X 
+            */
         }
     }
 public class Audio{
