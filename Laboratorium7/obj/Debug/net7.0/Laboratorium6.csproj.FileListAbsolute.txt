@@ -20,3 +20,10 @@ D:\WebDev\WSEI\Laboratorium-WDP\Laboratorium7\obj\Debug\net7.0\Laboratorium6.csp
 D:\WebDev\WSEI\Laboratorium-WDP\Laboratorium7\obj\Debug\net7.0\Laboratorium6.dll
 D:\WebDev\WSEI\Laboratorium-WDP\Laboratorium7\obj\Debug\net7.0\refint\Laboratorium6.dll
 D:\WebDev\WSEI\Laboratorium-WDP\Laboratorium7\obj\Debug\net7.0\Laboratorium6.pdb
+D:\WebDev\WSEI\Laboratorium-WDP\Laboratorium7\bin\Debug\net7.0\Laboratorium6.exe
+D:\WebDev\WSEI\Laboratorium-WDP\Laboratorium7\bin\Debug\net7.0\Laboratorium6.deps.json
+D:\WebDev\WSEI\Laboratorium-WDP\Laboratorium7\bin\Debug\net7.0\Laboratorium6.runtimeconfig.json
+D:\WebDev\WSEI\Laboratorium-WDP\Laboratorium7\bin\Debug\net7.0\Laboratorium6.dll
+D:\WebDev\WSEI\Laboratorium-WDP\Laboratorium7\bin\Debug\net7.0\Laboratorium6.pdb
+D:\WebDev\WSEI\Laboratorium-WDP\Laboratorium7\obj\Debug\net7.0\Laboratorium6.genruntimeconfig.cache
+D:\WebDev\WSEI\Laboratorium-WDP\Laboratorium7\obj\Debug\net7.0\ref\Laboratorium6.dll

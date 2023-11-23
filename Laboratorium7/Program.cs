@@ -1,4 +1,4 @@
-﻿namespace Laboratorium6
+﻿namespace Laboratorium7
 {
     internal class Program
     {
@@ -23,12 +23,12 @@ public class Audio{
         Volume = MinVolume;
     }
 
-        public int VolumeUp(){
+        public void VolumeUp(){
             if(Volume < MaxVolume){
                 Volume++;
             }
         }
-        public int VolumeDown(){
+        public void VolumeDown(){
             if(Volume > MinVolume){
                 Volume--;
             }
