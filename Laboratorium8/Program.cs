@@ -11,10 +11,15 @@
         string Message = "abcd";
         string MessageInterpolated = $"Value of Message '{Message}'";
         string MessageRaw =
+
 @"line 1
 line2";
         char[] Chars = { 'a', 'b', 'c', 'd' };
         string MessageFromChars = new string(Chars);
+        Console.WriteLine(Message);
+        Console.WriteLine(MessageInterpolated);
+        Console.WriteLine(MessageRaw);
+        Console.WriteLine(MessageFromChars);
     }
 
     public static void StringIteration()
@@ -33,5 +38,18 @@ line2";
         {
             Console.WriteLine(d);
         }
+    }
+
+    public static void StringShiftByContatenation()
+    {
+        string source = "abcd";
+        string target = "";
+        for(int i=0; i < source.Length; i++)
+        {
+            int c = source[i];
+            c += 3;
+            target += (char) c; //konkatenacja, powoduje utworzenie nowego łańcucha i przypisanie go do target
+        }
+        Console.WriteLine(target);
     }
 }
