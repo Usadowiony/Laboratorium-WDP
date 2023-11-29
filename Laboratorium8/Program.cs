@@ -7,9 +7,10 @@ internal class Program
         /*StringCreation();
         StringIteration();
         StringShiftByContatenation();
-        StringShiftByStringBuilder();*/
+        StringShiftByStringBuilder();
         StringInstanceMethods();
-        StringStaticMethods();
+        StringStaticMethods();*/
+        DateTimeDemo();
     }
 
     public static void StringCreation()
@@ -105,5 +106,24 @@ line2";
         string a1 = "abcd";
         string a2 = "ab";
         Console.WriteLine(string.Compare(a1, a2));
+    }
+
+    public static void DateTimeDemo()
+    {
+        DateTime now = DateTime.Now;
+        DateTime past = new DateTime(2010, 02, 28);
+        DateTime parsedDate = DateTime.Parse("2000-10-20");
+        Console.WriteLine(now);
+        Console.WriteLine(past);
+        Console.WriteLine(parsedDate);
+        string input = Console.ReadLine();
+        if (DateTime.TryParse(input, out var inputDate)) {
+            Console.WriteLine($"Poprawnie wpisałeś datę: {inputDate}");
+            Console.WriteLine(now.Year - inputDate.Year);
+        }
+        else
+        {
+            Console.WriteLine($"Błąd, źle wpisałeś datę!");
+        }
     }
 }
