@@ -1,9 +1,13 @@
-﻿internal class Program
+﻿using System.Text;
+
+internal class Program
 {
     private static void Main(string[] args)
     {
         StringCreation();
         StringIteration();
+        StringShiftByContatenation();
+        StringShiftByStringBuilder();
     }
 
     public static void StringCreation()
@@ -51,5 +55,18 @@ line2";
             target += (char) c; //konkatenacja, powoduje utworzenie nowego łańcucha i przypisanie go do target
         }
         Console.WriteLine(target);
+    }
+
+    public static void StringShiftByStringBuilder()
+    {
+        string source = "abcd";
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < source.Length; i++)
+        {
+            int c = source[i];
+            c += 3;
+            sb.Append((char) c);
+        }
+        Console.WriteLine(sb.ToString());
     }
 }
