@@ -4,10 +4,11 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        StringCreation();
+        /*StringCreation();
         StringIteration();
         StringShiftByContatenation();
-        StringShiftByStringBuilder();
+        StringShiftByStringBuilder();*/
+        StringInstanceMethods();
     }
 
     public static void StringCreation()
@@ -68,5 +69,14 @@ line2";
             sb.Append((char) c);
         }
         Console.WriteLine(sb.ToString());
+    }
+
+    public static void StringInstanceMethods()
+    {
+        string msg = "abcdął0ć12343%^&*";
+        Console.WriteLine(msg.ToUpper());
+        Console.WriteLine(msg.ToLower());
+        Console.WriteLine(msg.Replace("12", "89"));
+        Console.WriteLine("abcdd  ty   lkj".Replace(" ", ""));
     }
 }
