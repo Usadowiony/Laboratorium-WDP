@@ -9,6 +9,7 @@ internal class Program
         StringShiftByContatenation();
         StringShiftByStringBuilder();*/
         StringInstanceMethods();
+        StringStaticMethods();
     }
 
     public static void StringCreation()
@@ -86,5 +87,23 @@ line2";
         string email = "adam@wsei.edu.pl";
         string domain = email.Substring(email.IndexOf("@") + 1);
         Console.WriteLine(domain);
+        string[] tokens = email.Split("@");
+        Console.WriteLine(tokens[0]);
+        Console.WriteLine(tokens[1]);
+        string input = "line 1\n line 2\n line 3";
+        string[] lines = input.Split("\n ");
+        Console.WriteLine(lines[0]);
+        Console.WriteLine(lines[1]);
+        Console.WriteLine(lines[2]);
+    }
+
+    public static void StringStaticMethods()
+    {
+        string[] names = { "adam", "ewa", "karol"};
+        Console.WriteLine(string.Concat(names));
+        Console.WriteLine(string.Join(", ", names));
+        string a1 = "abcd";
+        string a2 = "ab";
+        Console.WriteLine(string.Compare(a1, a2));
     }
 }
