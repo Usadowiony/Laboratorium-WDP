@@ -73,10 +73,18 @@ line2";
 
     public static void StringInstanceMethods()
     {
-        string msg = "abcdął0ć12343%^&*";
+        string msg = "abcdął0ć12343%^&*ą";
         Console.WriteLine(msg.ToUpper());
         Console.WriteLine(msg.ToLower());
         Console.WriteLine(msg.Replace("12", "89"));
         Console.WriteLine("abcdd  ty   lkj".Replace(" ", ""));
+        Console.WriteLine("abcdd  ty   lkj     \n".Trim());
+        Console.WriteLine(msg.IndexOf('ą'));
+        Console.WriteLine(msg.LastIndexOf('ą'));
+        Console.WriteLine(msg.Substring(6, 5));
+
+        string email = "adam@wsei.edu.pl";
+        string domain = email.Substring(email.IndexOf("@") + 1);
+        Console.WriteLine(domain);
     }
 }
