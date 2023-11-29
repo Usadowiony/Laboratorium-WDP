@@ -113,17 +113,21 @@ line2";
         DateTime now = DateTime.Now;
         DateTime past = new DateTime(2010, 02, 28);
         DateTime parsedDate = DateTime.Parse("2000-10-20");
+        DateTime birth = new DateTime(2010-02-28);
         Console.WriteLine(now);
         Console.WriteLine(past);
         Console.WriteLine(parsedDate);
-        string input = Console.ReadLine();
+        /*string input = Console.ReadLine();
         if (DateTime.TryParse(input, out var inputDate)) {
             Console.WriteLine($"Poprawnie wpisałeś datę: {inputDate}");
-            Console.WriteLine(now.Year - inputDate.Year);
+            Console.WriteLine($"Różnica lat od dzisiaj{ now.Year - inputDate.Year}");
+            Console.WriteLine($"Data za 100 dni {now.AddDays(100)}");
+            Console.WriteLine($"Okres pomiedzy datami {now - inputDate}");
+            Console.WriteLine($"Czy now jest większe od inputDate: {now > inputDate}");
         }
         else
         {
             Console.WriteLine($"Błąd, źle wpisałeś datę!");
-        }
+        }*/
     }
 }
