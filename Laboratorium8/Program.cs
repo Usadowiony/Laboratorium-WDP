@@ -134,25 +134,20 @@ line2";
     }
     public static string Zadanie2(string input){
         StringBuilder compressed = new StringBuilder();
-        int countC = 0;
-        for(int i = 0; i < input.Length; i++){
-            char c = input[i]; //to aktualna literka w ciagu
+        int countC = 1;
 
-            if(i > 0){
-                if(c == input[i - 1]){
-                countC++;
+        for(int i = 1; i < input.Length; i++){
+            if(input[i] == input[i + 1]){
+                    countC++;
                 }else{
-                    if(countC == 0){
-                        compressed.Append(c);
+                    if(countC == 1){
+                        compressed.Append(input[i]);
                     }else{
                         compressed.Append(countC.ToString());
                         compressed.Append(input[i-1]);
-                        countC = 0;
+                        countC = 1;
                     }
                 }
-            }else{
-                compressed.Append(input[i]);
-            }
         }
         return compressed.ToString();
     }
