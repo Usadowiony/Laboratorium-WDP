@@ -129,5 +129,9 @@ line2";
         {
             Console.WriteLine($"Błąd, źle wpisałeś datę!");
         }*/
+
+        public static void Zadanie2(){
+            
+        }
     }
 }
