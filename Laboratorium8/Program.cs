@@ -136,7 +136,7 @@ line2";
         StringBuilder compressed = new StringBuilder();
         int countC = 1;
 
-        for(int i = 1; i < input.Length; i++){
+        for(int i = 0; i < input.Length - 1; i++){
             if(input[i] == input[i + 1]){
                     countC++;
                 }else{
@@ -147,7 +147,19 @@ line2";
                         compressed.Append(input[i-1]);
                         countC = 1;
                     }
+            }
+            if (i == input.Length - 2)
+            {
+                if (countC == 1)
+                {
+                    compressed.Append(input[i + 1]);
                 }
+                else
+                {
+                    compressed.Append(countC.ToString());
+                    compressed.Append(input[i + 1]);
+                }
+            }
         }
         return compressed.ToString();
     }
