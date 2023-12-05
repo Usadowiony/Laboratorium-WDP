@@ -9,8 +9,9 @@ internal class Program
         StringShiftByContatenation();
         StringShiftByStringBuilder();
         StringInstanceMethods();
-        StringStaticMethods();*/
-        DateTimeDemo();
+        StringStaticMethods();
+        DateTimeDemo();*/
+        Console.WriteLine(Zadanie2("abbbcddddefggggaaaaauijjj"));
     }
 
     public static void StringCreation()
@@ -130,8 +131,10 @@ line2";
             Console.WriteLine($"Błąd, źle wpisałeś datę!");
         }*/
 
-        public static void Zadanie2(){
-            
+        public static void Zadanie2(string input){
+            StringBuilder compressed = new StringBuilder();
+            compressed.Append(result)
+            return compressed.ToString();
         }
     }
 }
