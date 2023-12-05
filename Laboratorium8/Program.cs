@@ -11,8 +11,11 @@ internal class Program
         StringInstanceMethods();
         StringStaticMethods();
         DateTimeDemo();*/
-        //Console.WriteLine(Zadanie2("abbbcddddefggggaaaaauijjj"));
-        Console.WriteLine(Zadanie3("abc@d ab@c uio@d uioi@oa 899@4AQdad3 8920@942 22@387838237"));
+        StudentTask task = new StudentTask(){Deadline = new DateTime(2023,12, 23), Title = "Sprawdzian"};
+        Console.WriteLine(task.Title);
+        Console.WriteLine(task.Deadline);
+        Console.WriteLine(task.Done);
+        Console.WriteLine(task.Completed == null ? "null": task.Completed.ToString());
     }
 
     public static void StringCreation()
@@ -133,10 +136,17 @@ line2";
         }*/
     }
     public class StudentTask{
-        public string Title { get; set; }
+        public string Title { get; set; } = "";
         public DateTime Deadline { get; set; }
         public DateTime Completed { get; set; }
-        public bool Done { get; set; }
+        public bool Done { get; set; } = false;
+        
+        public StudentTask(){}
+
+        public StudentTask(string title, DateTime deadline){
+            Title = title;
+            Deadline = deadline;
+        }
     }
     public static string Zadanie2(string input){
         StringBuilder compressed = new StringBuilder();
