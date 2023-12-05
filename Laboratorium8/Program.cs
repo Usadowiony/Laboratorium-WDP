@@ -138,7 +138,7 @@ line2";
     public class StudentTask{
         public string Title { get; set; } = "";
         public DateTime Deadline { get; set; }
-        public DateTime Completed { get; set; }
+        public DateTime? Completed { get; private set; } = null;
         public bool Done { get; set; } = false;
         
         public StudentTask(){}
@@ -146,6 +146,23 @@ line2";
         public StudentTask(string title, DateTime deadline){
             Title = title;
             Deadline = deadline;
+        }
+        public void MarkAsCompleted(){
+            if (!Done && DateTime.Now <= Deadline)
+            {
+                Completed = DateTime.Now;
+                Done = true;
+            }
+        }
+        public int DaysToDeadline(DateTime from){
+            if (!Done && from < Deadline)
+            {
+                return (Deadline - from).Days;
+            }
+            else
+            {
+                return 0;
+            }
         }
     }
     public static string Zadanie2(string input){
