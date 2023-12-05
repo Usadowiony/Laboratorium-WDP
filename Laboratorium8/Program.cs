@@ -130,11 +130,13 @@ line2";
         {
             Console.WriteLine($"Błąd, źle wpisałeś datę!");
         }*/
-
-        public static void Zadanie2(string input){
+    }
+    public static void Zadanie2(string input){
             StringBuilder compressed = new StringBuilder();
-            compressed.Append(result)
+            for(int i = 0; input.Length; i++){
+                Console.WriteLine('t');
+            }
+            compressed.Append(result);
             return compressed.ToString();
         }
-    }
 }

@@ -13,3 +13,10 @@ D:\Users\wojciech.pietrzak\source\repos\Laboratorium8\Laboratorium8\obj\Debug\ne
 D:\Users\wojciech.pietrzak\source\repos\Laboratorium8\Laboratorium8\obj\Debug\net6.0\Laboratorium8.pdb
 D:\Users\wojciech.pietrzak\source\repos\Laboratorium8\Laboratorium8\obj\Debug\net6.0\Laboratorium8.genruntimeconfig.cache
 D:\Users\wojciech.pietrzak\source\repos\Laboratorium8\Laboratorium8\obj\Debug\net6.0\ref\Laboratorium8.dll
+D:\WebDev\WSEI\Laboratorium-WDP\Laboratorium8\obj\Debug\net6.0\Laboratorium8.GeneratedMSBuildEditorConfig.editorconfig
+D:\WebDev\WSEI\Laboratorium-WDP\Laboratorium8\obj\Debug\net6.0\Laboratorium8.AssemblyInfoInputs.cache
+D:\WebDev\WSEI\Laboratorium-WDP\Laboratorium8\obj\Debug\net6.0\Laboratorium8.AssemblyInfo.cs
+D:\WebDev\WSEI\Laboratorium-WDP\Laboratorium8\obj\Debug\net6.0\Laboratorium8.csproj.CoreCompileInputs.cache
+D:\WebDev\WSEI\Laboratorium-WDP\Laboratorium8\obj\Debug\net6.0\Laboratorium8.dll
+D:\WebDev\WSEI\Laboratorium-WDP\Laboratorium8\obj\Debug\net6.0\refint\Laboratorium8.dll
+D:\WebDev\WSEI\Laboratorium-WDP\Laboratorium8\obj\Debug\net6.0\Laboratorium8.pdb
