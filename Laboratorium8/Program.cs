@@ -12,7 +12,7 @@ internal class Program
         StringStaticMethods();
         DateTimeDemo();*/
         //Console.WriteLine(Zadanie2("abbbcddddefggggaaaaauijjj"));
-        Zadanie2("demo");
+        Console.WriteLine(Zadanie2("demo"));
     }
 
     public static void StringCreation()
@@ -134,9 +134,22 @@ line2";
     }
     public static string Zadanie2(string input){
             StringBuilder compressed = new StringBuilder();
-            foreach(char c in input){
+            int currentC = 0;
+            for(int i=0; i<input.Length;i++){
+                char c = input[i]; //to aktualna literka w ciagu
+                while(c != input[i-1]){
+                    currentC++;
+                }
+
+                if(c != input[i-1]){ //jesli c sie rozni od porzedniego c
+                    compressed.Append(c); //dodaj c do rezultatu
+                }else{
+                    currentC++;
+                } 
                 compressed.Append(c);
             }
+                abcdefff
+                //jesli c sie rozni od porzedniego to idz dalej, jesli nie to do pustego counta dodaj 1 i dopoki nie przestanie byc c rozne od poprzedniego caly czas dodawaj do count a jak juz nastepne c bedzie inne append compressed o liczbe count i c jakie to bylo
             return compressed.ToString();
     }
 }
