@@ -11,7 +11,8 @@ internal class Program
         StringInstanceMethods();
         StringStaticMethods();
         DateTimeDemo();*/
-        Console.WriteLine(Zadanie2("abbbcddddefggggaaaaauijjj"));
+        //Console.WriteLine(Zadanie2("abbbcddddefggggaaaaauijjj"));
+        Zadanie2("demo");
     }
 
     public static void StringCreation()
@@ -131,12 +132,11 @@ line2";
             Console.WriteLine($"Błąd, źle wpisałeś datę!");
         }*/
     }
-    public static void Zadanie2(string input){
+    public static string Zadanie2(string input){
             StringBuilder compressed = new StringBuilder();
-            for(int i = 0; input.Length; i++){
-                Console.WriteLine('t');
+            foreach(char c in input){
+                compressed.Append(c);
             }
-            compressed.Append(result);
             return compressed.ToString();
     }
 }
