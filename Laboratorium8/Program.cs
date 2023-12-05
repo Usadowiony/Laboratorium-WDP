@@ -12,7 +12,7 @@ internal class Program
         StringStaticMethods();
         DateTimeDemo();*/
         //Console.WriteLine(Zadanie2("abbbcddddefggggaaaaauijjj"));
-        Console.WriteLine(Zadanie2("deemoooo"));
+        Console.WriteLine(Zadanie3("abc@d ab@c uio@d uioi@oa 899@4AQdad3 8920@942 22@387838237"));
     }
 
     public static void StringCreation()
@@ -132,6 +132,12 @@ line2";
             Console.WriteLine($"Błąd, źle wpisałeś datę!");
         }*/
     }
+    public class StudentTask{
+        public string Title { get; set; }
+        public DateTime Deadline { get; set; }
+        public DateTime Completed { get; set; }
+        public bool Done { get; set; }
+    }
     public static string Zadanie2(string input){
         StringBuilder compressed = new StringBuilder();
         int countC = 1;
@@ -162,5 +168,22 @@ line2";
             }
         }
         return compressed.ToString();
+    }
+    public static int Zadanie3(string input){
+        if (string.IsNullOrEmpty(input)){
+            return -1;
+        }
+        string[] words = input.Split(' ');
+        int maxLength = 0;
+        
+        foreach (string word in words)
+        {
+            if (!word.Contains("@") && word.Length > maxLength)
+            {
+                maxLength = word.Length;
+            }
+        }
+
+        return maxLength;
     }
 }
