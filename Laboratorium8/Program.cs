@@ -138,5 +138,5 @@ line2";
             }
             compressed.Append(result);
             return compressed.ToString();
-        }
+    }
 }
