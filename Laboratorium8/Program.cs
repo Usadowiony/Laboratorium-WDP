@@ -12,7 +12,7 @@ internal class Program
         StringStaticMethods();
         DateTimeDemo();*/
         //Console.WriteLine(Zadanie2("abbbcddddefggggaaaaauijjj"));
-        Console.WriteLine(Zadanie2("demo"));
+        Console.WriteLine(Zadanie2("deemoooo"));
     }
 
     public static void StringCreation()
@@ -133,23 +133,27 @@ line2";
         }*/
     }
     public static string Zadanie2(string input){
-            StringBuilder compressed = new StringBuilder();
-            int currentC = 0;
-            for(int i=0; i<input.Length;i++){
-                char c = input[i]; //to aktualna literka w ciagu
-                while(c != input[i-1]){
-                    currentC++;
-                }
+        StringBuilder compressed = new StringBuilder();
+        int countC = 0;
+        for(int i = 0; i < input.Length; i++){
+            char c = input[i]; //to aktualna literka w ciagu
 
-                if(c != input[i-1]){ //jesli c sie rozni od porzedniego c
-                    compressed.Append(c); //dodaj c do rezultatu
+            if(i > 0){
+                if(c == input[i - 1]){
+                countC++;
                 }else{
-                    currentC++;
-                } 
-                compressed.Append(c);
+                    if(countC == 0){
+                        compressed.Append(c);
+                    }else{
+                        compressed.Append(countC.ToString());
+                        compressed.Append(input[i-1]);
+                        countC = 0;
+                    }
+                }
+            }else{
+                compressed.Append(input[i]);
             }
-                abcdefff
-                //jesli c sie rozni od porzedniego to idz dalej, jesli nie to do pustego counta dodaj 1 i dopoki nie przestanie byc c rozne od poprzedniego caly czas dodawaj do count a jak juz nastepne c bedzie inne append compressed o liczbe count i c jakie to bylo
-            return compressed.ToString();
+        }
+        return compressed.ToString();
     }
 }
