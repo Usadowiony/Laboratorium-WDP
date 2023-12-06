@@ -9,6 +9,7 @@
                 Birth = new DateTime(2000,10,10),
                 StudyField = "Informatyka stosowana"};
             Console.WriteLine(student);
+            student.ToString();
         }
         public class Person {
             public string Name { get; set; }
@@ -18,9 +19,19 @@
             {
                 return now.Year - Birth.Year;
             }
+
+            public override string? ToString()
+            {
+                return $"Person{{Name:{Name}, Birth: {Birth}}}";
+            }
         }
         public class Student:Person{
             public string StudyField { get; set; }
+
+            public override string? ToString()
+            {
+                return $"Student{{Name:{Name}, Birth: {Birth}, StudyField: {StudyField}}}";
+            }
         }
     }
 }
