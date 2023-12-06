@@ -1,0 +1,15 @@
+D:\Users\wojciech.pietrzak\source\repos\Laboratorium9\Laboratorium9\bin\Debug\net6.0\Laboratorium9.exe
+D:\Users\wojciech.pietrzak\source\repos\Laboratorium9\Laboratorium9\bin\Debug\net6.0\Laboratorium9.deps.json
+D:\Users\wojciech.pietrzak\source\repos\Laboratorium9\Laboratorium9\bin\Debug\net6.0\Laboratorium9.runtimeconfig.json
+D:\Users\wojciech.pietrzak\source\repos\Laboratorium9\Laboratorium9\bin\Debug\net6.0\Laboratorium9.dll
+D:\Users\wojciech.pietrzak\source\repos\Laboratorium9\Laboratorium9\bin\Debug\net6.0\Laboratorium9.pdb
+D:\Users\wojciech.pietrzak\source\repos\Laboratorium9\Laboratorium9\obj\Debug\net6.0\Laboratorium9.csproj.AssemblyReference.cache
+D:\Users\wojciech.pietrzak\source\repos\Laboratorium9\Laboratorium9\obj\Debug\net6.0\Laboratorium9.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\wojciech.pietrzak\source\repos\Laboratorium9\Laboratorium9\obj\Debug\net6.0\Laboratorium9.AssemblyInfoInputs.cache
+D:\Users\wojciech.pietrzak\source\repos\Laboratorium9\Laboratorium9\obj\Debug\net6.0\Laboratorium9.AssemblyInfo.cs
+D:\Users\wojciech.pietrzak\source\repos\Laboratorium9\Laboratorium9\obj\Debug\net6.0\Laboratorium9.csproj.CoreCompileInputs.cache
+D:\Users\wojciech.pietrzak\source\repos\Laboratorium9\Laboratorium9\obj\Debug\net6.0\Laboratorium9.dll
+D:\Users\wojciech.pietrzak\source\repos\Laboratorium9\Laboratorium9\obj\Debug\net6.0\refint\Laboratorium9.dll
+D:\Users\wojciech.pietrzak\source\repos\Laboratorium9\Laboratorium9\obj\Debug\net6.0\Laboratorium9.pdb
+D:\Users\wojciech.pietrzak\source\repos\Laboratorium9\Laboratorium9\obj\Debug\net6.0\Laboratorium9.genruntimeconfig.cache
+D:\Users\wojciech.pietrzak\source\repos\Laboratorium9\Laboratorium9\obj\Debug\net6.0\ref\Laboratorium9.dll
