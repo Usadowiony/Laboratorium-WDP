@@ -4,10 +4,17 @@
     {
         static void Main(string[] args)
         {
-            Student student = new Student(){
+            //InheritanceDemo();
+        }
+
+        private static void InheritanceDemo()
+        {
+            Student student = new Student()
+            {
                 Name = "Adam",
-                Birth = new DateTime(2000,10,10),
-                StudyField = "Informatyka stosowana"};
+                Birth = new DateTime(2000, 10, 10),
+                StudyField = "Informatyka stosowana"
+            };
             Console.WriteLine(student);
             student.ToString();
             //Student s = new Student("Ewa", DateTime.Parse("2000-10-10"), "Ekonomia");
@@ -19,13 +26,14 @@
             Random random = new Random();
             Person[] people = {
                 new Person() { Name = "Karol" },
-                student, random.NextDouble() < 0.5 ? new Person() { Name = "Beata" } : new Person() { Name = "Robert" }
+                student, random.NextDouble() < 0.5 ? new Person() { Name = "Beata" } : new Pracownik() { Name = "Robert" }
             };
             foreach (Person person in people)
             {
                 Console.WriteLine(person);
             }
         }
+
         public class Person {
             public string Name { get; set; }
             public DateTime Birth { get; set; }
@@ -52,6 +60,14 @@
             public override string? ToString()
             {
                 return $"Student{{Name:{Name}, Birth: {Birth}, StudyField: {StudyField}}}";
+            }
+        }
+
+        public class Pracownik : Person
+        {
+            public override string? ToString()
+            {
+               return $"Pracownik{{Name:{Name}, Birth: {Birth}}}";
             }
         }
     }
