@@ -10,9 +10,12 @@
                 StudyField = "Informatyka stosowana"};
             Console.WriteLine(student);
             student.ToString();
-            Student s = new Student("Ewa", DateTime.Parse("2000-10-10"), "Ekonomia");
-            object studentObject = student;
+            //Student s = new Student("Ewa", DateTime.Parse("2000-10-10"), "Ekonomia");
+            object studentAsObject = student;
             Person studentAsPerson = student;
+            Console.WriteLine(studentAsPerson.Name);
+            Console.WriteLine(studentAsObject.ToString());
+            Person[] people = { new Person() { Name = "Karol" }, student };
         }
         public class Person {
             public string Name { get; set; }
