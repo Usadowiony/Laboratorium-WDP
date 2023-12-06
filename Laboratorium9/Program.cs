@@ -15,7 +15,16 @@
             Person studentAsPerson = student;
             Console.WriteLine(studentAsPerson.Name);
             Console.WriteLine(studentAsObject.ToString());
-            Person[] people = { new Person() { Name = "Karol" }, student };
+            Console.WriteLine("******Polimorfizm******");
+            Random random = new Random();
+            Person[] people = {
+                new Person() { Name = "Karol" },
+                student, random.NextDouble() < 0.5 ? new Person() { Name = "Beata" } : new Person() { Name = "Robert" }
+            };
+            foreach (Person person in people)
+            {
+                Console.WriteLine(person);
+            }
         }
         public class Person {
             public string Name { get; set; }
