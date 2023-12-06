@@ -5,6 +5,25 @@
         static void Main(string[] args)
         {
             //InheritanceDemo();
+            Rectangle r = new Rectangle() { Height = 23, Width = 5, Color = 5};
+            r.Draw();
+        }
+
+        public abstract class Shape{
+            public int Color {  get; set; }
+            public abstract double Area { get; }
+            public abstract void Draw();
+        }
+        public class Rectangle : Shape
+        {
+            public double Width { get; set; }
+            public double Height { get; set; }
+            public override double Area => throw new NotImplementedException();
+
+            public override void Draw()
+            {
+                Console.WriteLine($"Rectangle {Width} x {Height}");
+            }
         }
 
         private static void InheritanceDemo()
