@@ -40,7 +40,25 @@
         {
             Console.WriteLine(name.ToUpper());
         }
+        var collection = NamesCollection();
+        RemoveWithA(collection);
+        Console.WriteLine("===Usuwanie z kolekcji===");
+        Console.WriteLine(string.Join(", ", names));
     }
+       static void RemoveWithA(ICollection<string> collection)
+        {
+            List<string> removed = new List<string>(collection);
+            foreach(string name in collection)
+            {
+                if (name.StartsWith("A"))
+                {
+                    removed.Add(name);
+                }
+            }
+            foreach(string name in removed) { 
+                collection.Remove(name);
+            }
+        }
 
     static ICollection<string> NamesCollection()
     {
@@ -48,7 +66,7 @@
             "Adam",
             "Ewa",
             "Karol",
-            "Beata"
+            "Beata",
         };
         return names;
     }
