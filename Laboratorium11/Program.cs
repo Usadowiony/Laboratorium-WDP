@@ -19,6 +19,15 @@
         List<string> cards = new List<string>() { "A2", "B2", "R3", "A2", "B1", "B2"};
         var uniqeCards = new HashSet<string>(cards);
         Console.WriteLine(string.Join(", ", uniqeCards));
+        Console.WriteLine(uniqeNumbers.Contains(5));
+        uniqeNumbers.UnionWith(new int[] { 1111, 2222});
+        Console.WriteLine(string.Join(", ", uniqeNumbers));
+        uniqeNumbers.ExceptWith(new int[] { 32, 5 });
+        Console.WriteLine(string.Join(", ", uniqeNumbers));
+        foreach(string card in cards)
+        {
+            Console.WriteLine(card);
+        }
     }
     private static void CollectionAndListDemo()
     {
