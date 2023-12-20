@@ -44,6 +44,26 @@
         RemoveWithA(collection);
         Console.WriteLine("===Usuwanie z kolekcji===");
         Console.WriteLine(string.Join(", ", names));
+        IList<string> listNames = NameList();
+        Console.WriteLine(listNames[0]);
+        listNames[0] = "Alicja";
+        listNames.Insert(2, "Tomek");
+        int index = listNames.IndexOf("Ewa");
+        Console.WriteLine(string.Join(", ", listNames));
+        if (index > -1)
+        {
+            if (index + 1 < listNames.Count())
+            {
+                listNames.RemoveAt(index + 1);
+            }
+        }
+        Console.WriteLine("===Usunięcie imienia za Ewa ===");
+        Console.WriteLine(string.Join(", ", listNames));
+    }
+
+    public static IList<string> NameList()
+    {
+        return new List<string>(NamesCollection());
     }
        static void RemoveWithA(ICollection<string> collection)
         {
