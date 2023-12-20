@@ -59,6 +59,13 @@
         }
         Console.WriteLine("===Usunięcie imienia za Ewa ===");
         Console.WriteLine(string.Join(", ", listNames));
+        List<string> processed = new List<string>() { "explorer.exe", "notepad.exe", "cmd.exe"};
+        processed.AddRange(new string[] { "calculator.exe", "word.exe" });
+        processed.RemoveRange(1, 2);
+        processed.InsertRange(0, new List<string>() { "visualstudio.exe", "packman.exe"});
+        Console.WriteLine("===Lista processed===");
+        Console.WriteLine(string.Join(", ", processed));
+
     }
 
     public static IList<string> NameList()
