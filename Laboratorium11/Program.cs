@@ -8,15 +8,45 @@
     }
     public static void DictionaryDemo()
     {
-        IDictionary<string, int> wordCouunters = new Dictionary<string, int>()
+        IDictionary<string, int> wordCounters = new Dictionary<string, int>()
         {
             { "ale", 2 },
             { "i", 4 },
             { "kot", 1 }
         };
 
-        int i = wordCouunters["ale"];
+        int i = wordCounters["ale"];
         Console.WriteLine(i);
+        wordCounters.Remove("kot");
+        foreach (KeyValuePair<string, int> item in wordCounters)
+        {
+            Console.WriteLine($"słowo: {item.Key}, liczba wystąpień: {item.Value}");
+        }
+        if (wordCounters.ContainsKey("w"))
+        {
+            Console.WriteLine("Jest");
+        }
+        else
+        {
+            Console.WriteLine("Nie ma");
+        }
+        IDictionary<int, int> counters = new Dictionary<int, int>();
+        int[] arr = {1, 2, 4, 2, 5, 6, 7, 2};
+        ISet<int> numbers = new HashSet<int>(arr);
+        foreach(int number in numbers)
+        {
+            counters.Add(number, 0);
+        }
+        foreach (var counter in counters)
+        {
+            for(int j = 0; j < arr.Length; j++)
+            {
+                if (arr[j] == counter.Key)
+                {
+                    counters[counter.Key] = counters[counter.Key] +1;
+                }
+            }
+        }
     }
     public static void SetDemo()
     {
