@@ -1,10 +1,43 @@
 ﻿internal class Program
 {
+    class Book
+    {
+        public string Title { get; set; }
+        public int PublishingYear { get; set; }
+
+        public override bool Equals(object? obj)
+        {
+            Console.WriteLine("Equals");
+            if (this == obj) return false;
+            Book? other = obj as Book;
+            if (other == null) return false;
+            return Title == other.Title && PublishingYear == other.PublishingYear;
+        }
+
+        public override int GetHashCode()
+        {
+            Console.WriteLine("HashCode");
+            return HashCode.Combine(Title, PublishingYear);
+        }
+    }
     static void Main(string[] args)
     {
         //CollectionAndListDemo();
         //SetDemo();
-        DictionaryDemo();
+        //DictionaryDemo();
+        //CollectionAndListDemo();
+        CollectionForCustomTypesDemo();
+    }
+
+    public static void CollectionForCustomTypesDemo()
+    {
+        List<Book> books = new List<Book>()
+        {
+            new Book() { Title = "ABC", PublishingYear = 2010},
+            new Book() { Title = "CDE", PublishingYear = 2021}
+        };
+        bool find = books.Contains(new Book() { Title = "CDE", PublishingYear = 2021 });
+        Console.WriteLine(find);
     }
     public static void DictionaryDemo()
     {
@@ -31,7 +64,7 @@
             Console.WriteLine("Nie ma");
         }
         IDictionary<int, int> counters = new Dictionary<int, int>();
-        int[] arr = {1, 2, 4, 2, 5, 6, 7, 2};
+        int[] arr = {1, 2, 4, 2, 5, 6, 7, 2, 5};
         ISet<int> numbers = new HashSet<int>(arr);
         foreach(int number in numbers)
         {
@@ -46,6 +79,10 @@
                     counters[counter.Key] = counters[counter.Key] +1;
                 }
             }
+        }
+        foreach (var counter in counters)
+        {
+            Console.WriteLine($"Dana liczba {counter.Key} występuje {counter.Value}");
         }
     }
     public static void SetDemo()
