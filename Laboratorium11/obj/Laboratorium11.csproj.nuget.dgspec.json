@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\wojciech.pietrzak\\source\\repos\\Laboratorium\\Laboratorium\\Laboratorium11.csproj": {}
+    "D:\\Users\\wojciech.pietrzak\\source\\repos\\Laboratorium11\\Laboratorium11\\Laboratorium11.csproj": {}
   },
   "projects": {
-    "D:\\Users\\wojciech.pietrzak\\source\\repos\\Laboratorium\\Laboratorium\\Laboratorium11.csproj": {
+    "D:\\Users\\wojciech.pietrzak\\source\\repos\\Laboratorium11\\Laboratorium11\\Laboratorium11.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\wojciech.pietrzak\\source\\repos\\Laboratorium\\Laboratorium\\Laboratorium11.csproj",
+        "projectUniqueName": "D:\\Users\\wojciech.pietrzak\\source\\repos\\Laboratorium11\\Laboratorium11\\Laboratorium11.csproj",
         "projectName": "Laboratorium11",
-        "projectPath": "D:\\Users\\wojciech.pietrzak\\source\\repos\\Laboratorium\\Laboratorium\\Laboratorium11.csproj",
+        "projectPath": "D:\\Users\\wojciech.pietrzak\\source\\repos\\Laboratorium11\\Laboratorium11\\Laboratorium11.csproj",
         "packagesPath": "D:\\Users\\wojciech.pietrzak\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\wojciech.pietrzak\\source\\repos\\Laboratorium\\Laboratorium\\obj\\",
+        "outputPath": "D:\\Users\\wojciech.pietrzak\\source\\repos\\Laboratorium11\\Laboratorium11\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "D:\\Users\\wojciech.pietrzak\\AppData\\Roaming\\NuGet\\NuGet.Config",
