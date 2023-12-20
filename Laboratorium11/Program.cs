@@ -3,7 +3,20 @@
     static void Main(string[] args)
     {
         //CollectionAndListDemo();
-        SetDemo();
+        //SetDemo();
+        DictionaryDemo();
+    }
+    public static void DictionaryDemo()
+    {
+        IDictionary<string, int> wordCouunters = new Dictionary<string, int>()
+        {
+            { "ale", 2 },
+            { "i", 4 },
+            { "kot", 1 }
+        };
+
+        int i = wordCouunters["ale"];
+        Console.WriteLine(i);
     }
     public static void SetDemo()
     {
