@@ -2,6 +2,26 @@
 {
     static void Main(string[] args)
     {
+        //CollectionAndListDemo();
+        SetDemo();
+    }
+    public static void SetDemo()
+    {
+        ISet<int> ints = new HashSet<int>();
+        ints.Add(1);
+        ints.Add(2);
+        ints.Add(3);
+        ints.Add(1);
+        Console.WriteLine(string.Join(", ", ints));
+        int[] numbers = { 1, 3, 6, 32, 2, 6, 5, 1, 4, 5, 6, 1, 4, 5, 5 };
+        ISet<int> uniqeNumbers = new HashSet<int>(numbers);
+        Console.WriteLine(string.Join(", ", uniqeNumbers));
+        List<string> cards = new List<string>() { "A2", "B2", "R3", "A2", "B1", "B2"};
+        var uniqeCards = new HashSet<string>(cards);
+        Console.WriteLine(string.Join(", ", uniqeCards));
+    }
+    private static void CollectionAndListDemo()
+    {
         IEnumerable<int> evens = Evens();
         foreach (int number in evens)
         {
@@ -59,13 +79,12 @@
         }
         Console.WriteLine("===Usunięcie imienia za Ewa ===");
         Console.WriteLine(string.Join(", ", listNames));
-        List<string> processed = new List<string>() { "explorer.exe", "notepad.exe", "cmd.exe"};
+        List<string> processed = new List<string>() { "explorer.exe", "notepad.exe", "cmd.exe" };
         processed.AddRange(new string[] { "calculator.exe", "word.exe" });
         processed.RemoveRange(1, 2);
-        processed.InsertRange(0, new List<string>() { "visualstudio.exe", "packman.exe"});
+        processed.InsertRange(0, new List<string>() { "visualstudio.exe", "packman.exe" });
         Console.WriteLine("===Lista processed===");
         Console.WriteLine(string.Join(", ", processed));
-
     }
 
     public static IList<string> NameList()
